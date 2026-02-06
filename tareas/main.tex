@@ -1,21 +1,92 @@
-\documentclass{article}
-\usepackage{graphicx} % Required for inserting images
+\documentclass[12pt]{article}
 
-\title{Tarea1 Programación}
-\author{Maria Rojas}
-\date{February 2026}
+% --- Página y tipografía ---
+\usepackage[letterpaper,margin=2.5cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} % si compilas con pdfLaTeX
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% --- Imágenes y color ---
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+% --- Control fino de espacios ---
+\usepackage{setspace}
+\setlength{\parindent}{0pt}
 
 \begin{document}
+\thispagestyle{empty}
 
-\maketitle
+% ===== Encabezado con logos + texto =====
+\begin{minipage}[c]{0.18\textwidth}
+    \centering
+    % Cambia por tu logo izquierdo
+    \includegraphics[width=0.95\linewidth]{logo_usac.jpeg}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.60\textwidth}
+    \small
+    Universidad de San Carlos de Guatemala\\
+    Escuela de Ciencias Físicas y Matemáticas\\
+    Nombre estudiante: Maria de los Angeles Rojas Granizo\\
+    Carnet: 202500859 \\
+    Programación 1\\
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.18\textwidth}
+    \centering
+    % Cambia por tu logo derecho
+    \includegraphics[width=1.4\linewidth]{logo_ecfm.jpg}
+\end{minipage}
 
-\section{Introduction}
+\vspace{0.5cm}
 
-He descubierto un interés particular por el campo de investigación de \textbf{la combinatoria y los fundamentos de la matemática}, ya que me permite comprender cómo se construyen, organizan y relacionan las estructuras matemáticas desde sus bases más esenciales. Esta área, que integra la matemática discreta, la teoría de conjuntos, la lógica matemática y el estudio de redes, ha cambiado mi forma de ver los problemas matemáticos, llevándome a pensar de manera más estructurada, analítica y creativa.
-Lo que más me atrae de la \textbf{combinatoria} es la forma en que, a partir de reglas simples, se pueden generar estructuras complejas y resolver problemas que requieren ingenio más que cálculo mecánico. La \textbf{lógica matemática} ha llamado mi atención debido a que, desde mi perspectiva, fortalece mi capacidad para razonar, argumentar y construir demostraciones sólidas. Por otro lado, el estudio de \textbf{redes o grafos} me resulta especialmente interesante porque permite modelar relaciones reales, como conexiones, recorridos o flujos, a través de representaciones matemáticas precisas.
-Mi interés por tomar esta área como línea de investigación también está fuertemente relacionado con la \textbf{programación}. En mis años como estudiante he notado que programar no solo consiste en escribir códigos, sino en traducir ideas matemáticas en algoritmos claros y eficientes. Considero que la programación me permitiría experimentar con conceptos de matemática discreta, comprobar resultados, explorar casos particulares y visualizar estructuras que, de otro modo, quedarían únicamente en el plano teórico.
-Además, muchas de las herramientas fundamentales de la programación —como los algoritmos, las estructuras de datos, la lógica booleana y los grafos— están directamente basadas en los fundamentos matemáticos que estudia esta área. Esta conexión me motiva a profundizar en la investigación, ya que veo en la combinatoria y los fundamentos de la matemática un espacio donde el rigor teórico y la aplicación práctica se complementan de forma natural.
+% Línea horizontal superior (gruesa)
+\noindent\rule{\textwidth}{1.2pt}
+
+\vspace{0.2cm}
+
+% ===== Título =====
+\begin{center}
+    {\Large\scshape Tarea 1 Programación}\\[0.3em]
+\end{center}
+
+\vspace{0.1cm}
+
+% Fecha
+\begin{center}
+    \small\scshape 06 de febrero de 2026
+\end{center}
+
+\vspace{0.2cm}
+
+% Línea horizontal inferior (gruesa)
+\noindent\rule{\textwidth}{1.2pt}
+
+\vspace{0.6cm}
+
+% ===== Caja de resumen =====
+\noindent
+\colorbox{pink!35}{%
+    \parbox{\textwidth}{%
+        \vspace{0.6em}
+        \textbf{Instrucciones: redacta un breve ensayo en el que describas cuál sería tu área de investigación en Física o Matemáticas y explica por qué la programación te sería útil en dicho campo. }\\[0.3em]
+        \small
+    }%
+}
+
+\vspace{20px}
+
+He descubierto un interés particular por el campo de investigación de \emph{\textbf{la combinatoria y los fundamentos de la matemática}}, ya que me permite comprender cómo se construyen, organizan y relacionan las estructuras matemáticas desde sus bases más esenciales. Esta área, que integra la matemática discreta, la teoría de conjuntos, la lógica matemática y el estudio de redes, ha cambiado mi forma de ver los problemas matemáticos, llevándome a pensar de manera más estructurada, analítica y creativa. \\
+Lo que más me atrae de la \emph{\textbf{\underline{combinatoria}}} es la forma en que, a partir de reglas simples, se pueden generar estructuras complejas y resolver problemas que requieren ingenio más que cálculo mecánico. \emph{\textbf{\underline{La lógica matemática}}} ha llamado mi atención debido a que, desde mi perspectiva, fortalece mi capacidad para razonar, argumentar y construir demostraciones sólidas. Por otro lado, el estudio de \emph{\textbf{\underline{redes o grafos}}} me resulta especialmente interesante porque permite modelar relaciones reales, como conexiones, recorridos o flujos, a través de representaciones matemáticas precisas. \\
+Mi interés por tomar esta área como línea de investigación también está fuertemente relacionado con la \emph{\textbf{programación}}. En mis años como estudiante he notado que programar no solo consiste en escribir códigos, sino en traducir ideas matemáticas en algoritmos claros y eficientes. Considero que la programación me permitiría experimentar con conceptos de matemática discreta, comprobar resultados, explorar casos particulares y visualizar estructuras que, de otro modo, quedarían únicamente en el plano teórico. \\
+Además, muchas de las herramientas fundamentales de la programación —como los algoritmos, las estructuras de datos, la lógica booleana y los grafos— están directamente basadas en los fundamentos matemáticos que estudia esta área. Esta conexión me motiva a profundizar en la investigación, ya que veo en la combinatoria y los fundamentos de la matemática un espacio donde el rigor teórico y la aplicación práctica se complementan de forma natural. \\
 En conclusión, me gustaría tomar esta área de investigación porque me permite unir mi interés por el razonamiento lógico, la estructura matemática y la programación. Considero que este campo no solo fortalecerá mi formación académica, sino que también me brindará herramientas para abordar problemas complejos desde una perspectiva analítica, creativa y con múltiples aplicaciones en la ciencia y la tecnología.
 
 
+
 \end{document}
+
+\end{document}
+
